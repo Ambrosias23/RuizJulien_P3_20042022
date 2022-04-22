@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*couleurs etc */
+/*Police régle général etc */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto';
+}
+
+footer .nom_logo {
+  font-family: 'Shrikhand';
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* formulaire */
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 47px;
+  background-color: #eaeaea;
+  font-size: 20px;
+  padding-left: 45px;
+}
+
+.localisation input {
+  height: 47px;
+  border: none;
+  background-color: #eaeaea;
+  padding-left: 20px;
+}
+
+.localisation value {
+  font-size: 40px;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #f7f6f6;
+  padding: 20px 55px 50px 55px;
+}
+
+.presentation h1 {
+  margin-bottom: 0px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.presentation p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.presentation button {
+  border-radius: 25px;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+.fonctionnement {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 52px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.fonctionnement_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin-right: 17px;
+  margin-left: 30px;
+  height: 70px;
+  background-color: #f7f6f6;
+  border-radius: 20px;
+}
+
+.fonctionnement_card span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 21px;
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  padding-left: 0px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.fonctionnement_card i {
+  font-size: 20px;
+  padding-left: 31px;
+  margin-right: 43px;
+}
+
+.cards_menu {
+  width: 100%;
+  padding-bottom: 60px;
+  margin-top: 65px;
+  background-color: #f7f6f6;
+}
+
+.cards_menu h1 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 55px;
+  margin-left: 20px;
+  margin-bottom: 28px;
+}
+
+.cards_menu .card_menu {
+  width: 90%;
+  height: 260px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.cards_menu a {
+  text-decoration: none;
+}
+
+.cards_menu img {
+  width: 100%;
+  height: 179px;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+}
+
+.cards_menu h2 {
+  color: black;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+
+.cards_menu h3 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  margin-left: 15px;
+}
+
+footer {
+  background-color: #353535;
+  padding-bottom: 20px;
+}
+
+.nom_logo {
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0px;
+  padding-left: 25px;
+}
+
+li {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  margin-right: 30px;
+  size: 15px;
+  width: 5px;
+}
+/*# sourceMappingURL=style.css.map */
