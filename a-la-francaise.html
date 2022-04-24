@@ -1,71 +1,76 @@
 <!DOCTYPE html >
-<html lang="Fr">
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/base/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://kit.fontawesome.com/53a83682ea.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
         <title>Oh my food</title>
     </head>
     <body>
-        <header>
+        <header class="header_menu">
             <div>
-                <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                <img src="images/logo/ohmyfood@2x.svg" alt="Logo de Oh my food">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <span><img src="images/logo/ohmyfood@2x.svg" alt="Logo de Oh my food"></span>
             </div>
         </header>
-        <section>
-            <div><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"></div>
-            
-            <section>
-                <h1>À la française</h1>
-                <div>ENTRÉES</div>
-                <div>
+        
+            <div class="image_menu"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"></div>
+           
+            <section class="liste_menu">
+                <h1 class="nom_restaurant">À la française</h1>
+                <div class="titre_cards">ENTRÉES</div>
+                <div class="card">
                     <div>Tartare de pouple acidulé</div>
-                    <div>Aux zests d'orange <span>25€</span></div>
+                    <div class="description">Aux zests d'orange <span>25€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Velouté de légumes d'antan</div>
-                    <div>Carotte, panais, topinambour <span>35€</span></div>
+                    <div class="description">Carotte, panais, topinambour <span>35€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Soupe à l'oignon</div>
-                    <div>Revisitée <span>20€</span></div>                    
+                    <div class="description">Revisitée <span>20€</span></div>                    
                 </div>
-                <div>PLATS</div>
-                <div>
+                <div class="titre_cards">PLATS</div>
+                <div class="card">
                     <div>Coquilles Saint-Jacques</div>
-                    <div>Accompagnées d'une purée de panais <span>40€</span></div>
+                    <div class="description">Accompagnées d'une purée de panais <span>40€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Magret de canard</div>
-                    <div>Et parmentier de pommes de terres <span>35€</span></div>
+                    <div class="description">Et parmentier de pommes de terres <span>35€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Pigeonneau d'Ille-et-Vilaine</div>
-                    <div>Sur son lit de gnocchis aux légumes <span>44€</span></div>
+                    <div class="description">Sur son lit de gnocchis aux légumes <span>44€</span></div>
                 </div>
-                <div>DESSERTS</div>
-                <div>
+                <div class="titre_cards">DESSERTS</div>
+                <div class="card">
                     <div>Pétales de violettes glacés</div>
-                    <div>Et purée de noisettes <span>18€</span></div>
+                    <div class="description">Et purée de noisettes <span>18€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Fondant au chocolat</div>
-                    <div>Revisité <span>22€</span></div>
+                    <div class="description">Revisité <span>22€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Millefeuille croustillant</div>
-                    <div>Myrtilles et pâte d'amande <span>23€</span></div>
+                    <div class="description">Myrtilles et pâte d'amande <span>23€</span></div>
                 </div>
-                <button type="submit" class="search-button">
+                <div class="button">
+                <button type="submit" class="button_degrade">
                     <span>Commander</span>
                 </button>
+                </div>
             </section>
-        </section>
+        
         <footer>
-            <img src="images/logo/ohmyfood@2x.svg" alt="Logo de Oh my food">
+            <div class="nom_logo">ohmyfood</div>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-utensils"></i> Poposer un restaurant</a></li>
                 <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>

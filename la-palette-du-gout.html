@@ -1,71 +1,76 @@
 <!DOCTYPE html >
-<html lang="Fr">
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://kit.fontawesome.com/53a83682ea.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
         <title>Oh my food</title>
     </head>
     <body>
-        <header>
+        <header class="header_menu">
             <div>
-                <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
                 <img src="images/logo/ohmyfood@2x.svg" alt="Logo de Oh my food">
             </div>
         </header>
-        <section>
-            <div><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"></div>
+       
+            <div class="image_menu"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"></div>
             
-            <section>
-                <h1>La palette du goût</h1>
-                <div>ENTRÉES</div>
-                <div>
+            <section class="liste_menu">
+                <h1 class="nom_restaurant">La palette du goût</h1>
+                <div class="titre_cards">ENTRÉES</div>
+                <div class="card">
                     <div>Fricassée d'escargot</div>
-                    <div>Au piment d'espelette <span>25€</span></div>
+                    <div class="description">Au piment d'espelette <span>25€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Foie gras de canard mi-cuit</div>
-                    <div>Et ses copeaux de truffe noir <span>35€</span></div>
+                    <div class="description">Et ses copeaux de truffe noir <span>35€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Oeuf au plat</div>
-                    <div>Assaisonné à la truffe sur lit de caviar <span>20€</span></div>
+                    <div class="description">Assaisonné à la truffe sur lit de caviar <span>20€</span></div>
                 </div>
-                <div>PLATS</div>
-                <div>
+                <div class="titre_cards">PLATS</div>
+                <div class="card">
                     <div>Filet de boeuf aux herbes</div>
-                    <div>Accompagné de sa ribambelle de légumes</div>
+                    <div class="description">Accompagné de sa ribambelle de légumes</div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Parmentier de queue de boeuf</div>
-                    <div>À la truffe noire sur sa purée de panais <span>35€</span></div>
+                    <div class="description">À la truffe noire sur sa purée de panais <span>35€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Filet de Turbot</div>
-                    <div>Aux agrumes <span>44€</span></div>
+                    <div class="description">Aux agrumes <span>44€</span></div>
                 </div>
-                <div>DESSERTS</div>
-                <div>
+                <div class="titre_cards">DESSERTS</div>
+                <div class="card">
                     <div>Paris-Brest</div>
-                    <div>Revisité <span>18€</span></div>
+                    <div class="description">Revisité <span>18€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Macaron au chocolat d'exception</div>
-                    <div>Et glace à la vanille de Madagascar <span>22€</span></div>
+                    <div class="description">Et glace à la vanille de Madagascar <span>22€</span></div>
                 </div>
-                <div>
+                <div class="card">
                     <div>Mousse au chocolat</div>
-                    <div>Au piment d'espelette et à la truffe noire <span>23€</span></div>
+                    <div class="description">Au piment d'espelette et à la truffe noire <span>23€</span></div>
                 </div>
-                <button type="submit" class="search-button">
-                    <span>Commander</span>
-                </button>
+                <div class="button">
+                    <button type="submit" class="button_degrade">
+                        <span>Commander</span>
+                    </button>
+                    </div>
             </section>
-        </section>
+        
         <footer>
-            <img src="images/logo/ohmyfood@2x.svg" alt="Logo de Oh my food">
+            <div class="nom_logo">ohmyfood</div>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-utensils"></i> Poposer un restaurant</a></li>
                 <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>

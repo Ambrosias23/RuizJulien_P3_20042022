@@ -1,44 +1,76 @@
 <!DOCTYPE html >
-<html lang="Fr">
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://kit.fontawesome.com/53a83682ea.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
         <title>Oh my food</title>
     </head>
     <body>
-        <header>
+        <header class="header_menu">
             <div>
-                <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
                 <img src="images/logo/ohmyfood@2x.svg" alt="Logo de Oh my food">
             </div>
         </header>
-        <section>
-            <div><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"></div>
+        
+            <div class="image_menu"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"></div>
             
-            <section>
-                <h1>Le délice des sens</h1>
-                <div>ENTRÉES</div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div>PLATS</div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div>DESSERTS</div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <button type="submit" class="search-button">
-                    <span>Commander</span>
-                </button>
+            <section class="liste_menu">
+                <h1 class="nom_restaurant">Le délice des sens</h1>
+                <div class="titre_cards">ENTRÉES</div>
+                <div class="card">
+                    <div>Tartare de thon</div>
+                    <div class="description">Assaisonné au yuzu <span>25€</span></div>  
+                </div>
+                <div class="card">
+                    <div>Bouchée de homard croustillant</div>
+                    <div class="description">Et sa farandole de petits légumes <span>20€</span></div>
+                </div>
+                <div class="card">
+                    <div>Velouté de cèpes</div>
+                    <div class="description">Aux truffes <span>20€</span></div>
+                </div>
+                <div class="titre_cards">PLATS</div>
+                <div class="card">
+                    <div>Poulet rôtie aux herbes de provence</div>
+                    <div class="description">Et sa crème de truffe <span>40€</span></div>
+                </div>
+                <div class="card">
+                    <div>Langouste rôtie</div>
+                    <div class="description">Et ses légumes de saison <span>35€</span></div>
+                </div>
+                <div class="card">
+                    <div>Côte de boeuf angus</div>
+                    <div class="description">Et sa purée de panais <span>44€</span></div>
+                </div>
+                <div class="titre_cards">DESSERTS</div>
+                <div class="card">
+                    <div>Farandole de desserts</div>
+                    <div class="description">Du chef <span>18€</span></div>
+                </div>
+                <div class="card">
+                <div>Crème brulée</div>
+                <div class="description">Revisitée <span>22€</span></div>
+                </div>
+                <div class="card">
+                    <div>Tiramisu</div>
+                    <div class="description">À la noisette <span>23€</span></div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="button_degrade">
+                        <span>Commander</span>
+                    </button>
+                    </div>
             </section>
-        </section>
+        
         <footer>
-            <img src="images/logo/ohmyfood@2x.svg" alt="Logo de Oh my food">
+            <div class="nom_logo">ohmyfood</div>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-utensils"></i> Poposer un restaurant</a></li>
                 <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
