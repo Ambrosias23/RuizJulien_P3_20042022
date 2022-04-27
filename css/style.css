@@ -216,6 +216,14 @@ i {
   margin-right: 43px;
 }
 
+.fonctionnement_card:hover {
+  background-color: #f4edfe;
+}
+
+.fonctionnement_card:hover i {
+  color: #9356DC;
+}
+
 .cards_menu {
   width: 100%;
   padding-bottom: 60px;
@@ -273,11 +281,11 @@ i {
   }
 }
 
-.cards_menu a {
+.card_menu a {
   text-decoration: none;
 }
 
-.cards_menu img {
+.card_menu a img {
   width: 100%;
   height: 179px;
   border-radius: 20px 20px 0px 0px;
@@ -285,7 +293,7 @@ i {
      object-fit: cover;
 }
 
-.cards_menu h2 {
+.card_menu a h2 {
   color: black;
   font-size: 19px;
   font-weight: 500;
@@ -293,13 +301,53 @@ i {
   margin-left: 15px;
 }
 
-.cards_menu h3 {
+.card_menu a h3 {
   margin-top: 5px;
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: 300;
   color: black;
   margin-left: 15px;
+}
+
+.card_menu .new {
+  background-color: #99e2d0;
+  color: #3a8567;
+  width: 90px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 35px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 991px) {
+  .card_menu .new {
+    right: 85px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card_menu .new {
+    right: 75px;
+  }
+}
+
+.card_menu .heart {
+  font-size: 25px;
+  font-weight: normal;
+  color: black;
+  position: absolute;
+  right: 35px;
+  margin-top: -20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -360,7 +408,7 @@ body {
 .liste_menu .titre_cards {
   width: 40px;
   font-weight: 300;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   padding-bottom: 3px;
   margin-bottom: 20px;
   margin-top: 35px;
