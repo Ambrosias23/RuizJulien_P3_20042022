@@ -3,13 +3,16 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 3px 11px rgb(201, 201, 201);
     a{
         color: black;}
         i{
             font-size: 20px;
             position: absolute;
             left: 20px;
-            top: 25px}       
+            top: 18px}       
 }
+.logo img{
+    height: 28px;}
 
 
