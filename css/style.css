@@ -758,8 +758,8 @@ i {
   padding-top: 334px;
   z-index: -1;
   opacity: 0;
-  -webkit-animation: modale 6s;
-          animation: modale 6s;
+  -webkit-animation: modale 5s;
+          animation: modale 5s;
 }
 
 .container .carre {
@@ -770,8 +770,8 @@ i {
   background: linear-gradient(#FF79DA, #9356DC);
   opacity: 0;
   border-radius: 10px;
-  -webkit-animation: rotate 4s;
-          animation: rotate 4s;
+  -webkit-animation: rotate 2s both, disparition_carre 4s;
+          animation: rotate 2s both, disparition_carre 4s;
 }
 
 @-webkit-keyframes modale {
@@ -806,40 +806,31 @@ i {
 
 @-webkit-keyframes rotate {
   0% {
-    opacity: 1;
     -webkit-transform: rotate 0turn;
             transform: rotate 0turn;
   }
-  50% {
-    opacity: 1;
+  100% {
     -webkit-transform: rotate(3turn);
             transform: rotate(3turn);
-  }
-  100% {
-    -webkit-transform: rotate(0turn);
-            transform: rotate(0turn);
   }
 }
 
 @keyframes rotate {
   0% {
-    opacity: 1;
     -webkit-transform: rotate 0turn;
             transform: rotate 0turn;
   }
-  50% {
-    opacity: 1;
+  100% {
     -webkit-transform: rotate(3turn);
             transform: rotate(3turn);
-  }
-  100% {
-    -webkit-transform: rotate(0turn);
-            transform: rotate(0turn);
   }
 }
 
 @-webkit-keyframes disparition_carre {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 1;
   }
   100% {
@@ -849,6 +840,9 @@ i {
 
 @keyframes disparition_carre {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 1;
   }
   100% {
@@ -906,6 +900,9 @@ body {
   margin-bottom: 20px;
   margin-top: 35px;
   font-size: 16px;
+  visibility: hidden;
+  -webkit-animation: progressive 2s forwards;
+          animation: progressive 2s forwards;
 }
 
 .liste_menu .card {
@@ -915,6 +912,16 @@ body {
   width: 100%;
   margin-bottom: 15px;
   padding-left: 10px;
+  visibility: hidden;
+  -webkit-animation: progressive;
+          animation: progressive;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  overflow: hidden;
   -webkit-box-shadow: 0px 5px 20px gainsboro;
           box-shadow: 0px 5px 20px gainsboro;
 }
@@ -948,10 +955,110 @@ body {
   text-align: center;
 }
 
+.card:hover + .validation {
+  -webkit-animation: validation 2s forwards;
+          animation: validation 2s forwards;
+}
+
+.validation {
+  width: 60px;
+  height: 68px;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+  border-radius: 0px 20px 20px 0px;
+  color: #99E2D0;
+  margin-left: 2px;
+}
+
+.validation i {
+  width: 29px;
+  height: 29px;
+  font-size: 27px;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid #99E2D0;
+  position: relative;
+  left: 16px;
+  right: 15px;
+  top: 14px;
+  bottom: 14px;
+}
+
 .nom_restaurant i {
   font-size: 25px;
   position: relative;
   left: 30px;
   top: -2px;
+}
+
+@-webkit-keyframes progressive {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes progressive {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes validation {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+}
+
+@keyframes validation {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
 }
 /*# sourceMappingURL=style.css.map */

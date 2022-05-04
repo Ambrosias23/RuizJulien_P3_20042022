@@ -197,7 +197,7 @@
     padding-top: 334px;
     z-index: -1;
     opacity: 0;
-    animation: modale 6s;
+    animation: modale 5s;
     .carre{
         position: relative;
         width  : 100px;
@@ -205,8 +205,9 @@
         background: linear-gradient($color-secondary, $color-primary);
         opacity: 0;
         border-radius: 10px;
-        animation: rotate 4s ;}    
-}
+        animation: rotate 2s both, disparition_carre 4s;
+        
+}}
 @keyframes modale {
     0% {
         z-index: 2;
@@ -223,20 +224,24 @@
   }
 @keyframes rotate{
     0% {
-        opacity: 1;
+        
         transform: rotate (0turn);
     }
     
-    50%{
-        opacity: 1;
-        transform: rotate(3turn);
-    }
+   
+
     100%{
-        transform: rotate(0turn);
+        
+        transform: rotate(3turn);
+       
+        
     }
 }
 @keyframes disparition_carre{
     0%{
+        opacity: 1;
+    }
+    50%{
         opacity: 1;
     }
     100%{
