@@ -364,9 +364,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .button_degrade {
@@ -378,11 +375,33 @@ body {
   margin-top: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
-.button_degrade span {
-  text-align: center;
-  color: white;
+.button_degrade:hover::after {
+  opacity: 1;
+}
+
+.button_degrade::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 5px 20px #b1b1b1;
+          box-shadow: 0px 5px 20px #b1b1b1;
+  opacity: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
+  background: linear-gradient(#ff88de, #9b63df);
+  border-radius: 25px;
 }
 
 header {
@@ -419,13 +438,13 @@ header i {
 footer {
   background-color: #353535;
   padding-bottom: 25px;
-  margin-top: -67px;
+  margin-top: -50px;
 }
 
 .nom_logo {
   color: white;
   font-size: 17px;
-  padding: 25px;
+  padding: 22px;
   font-weight: 100;
 }
 
@@ -448,9 +467,9 @@ a {
 }
 
 i {
-  margin-right: 20px;
+  margin-right: 23px;
   font-size: 13px;
-  width: 5px;
+  width: 3px;
 }
 
 .localisation {
@@ -682,7 +701,7 @@ i {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  right: 35px;
+  right: 14px;
   margin-top: 20px;
   border-radius: 3px;
 }
@@ -699,14 +718,13 @@ i {
   }
 }
 
-.card_menu .heart {
-  color: black;
+.heart {
   position: absolute;
   right: 35px;
   top: 200px;
 }
 
-.card_menu .heart i {
+.heart i {
   font-size: 25px;
 }
 
@@ -719,6 +737,122 @@ i {
 @media screen and (min-width: 991px) {
   .card_menu img {
     height: 550px;
+  }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.918);
+  width: 100%;
+  height: 2335px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 334px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: modale 6s;
+          animation: modale 6s;
+}
+
+.container .carre {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-animation: rotate 4s;
+          animation: rotate 4s;
+}
+
+@-webkit-keyframes modale {
+  0% {
+    z-index: 2;
+    opacity: 1;
+  }
+  80% {
+    z-index: 2;
+    opacity: 1;
+  }
+  100% {
+    z-index: 2;
+    opacity: 0;
+  }
+}
+
+@keyframes modale {
+  0% {
+    z-index: 2;
+    opacity: 1;
+  }
+  80% {
+    z-index: 2;
+    opacity: 1;
+  }
+  100% {
+    z-index: 2;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate 0turn;
+            transform: rotate 0turn;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+  }
+  100% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate 0turn;
+            transform: rotate 0turn;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+  }
+  100% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+}
+
+@-webkit-keyframes disparition_carre {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disparition_carre {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -751,10 +885,9 @@ body {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   position: relative;
   top: -55px;
-  bottom: 67px;
 }
 
 .liste_menu .nom_restaurant {
@@ -812,6 +945,7 @@ body {
   width: 175px;
   height: 50px;
   margin-top: 40px;
+  text-align: center;
 }
 
 .nom_restaurant i {

@@ -1,10 +1,7 @@
-.button
-{
+.button{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 .button_degrade{
     border-radius: 25px;
     border: 0px solid ;
@@ -12,8 +9,32 @@
     box-shadow: 0px 5px 20px rgb(190, 190, 190);
     margin-top: 10px;
     background: linear-gradient($color-secondary, $color-primary);
-    span{
-        text-align: center;
-        color: white;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor:pointer;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
     }
+    &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0px 5px 20px darken($color: rgb(190, 190, 190), $amount: 5);
+            opacity: 0;
+            z-index: -1;
+            background: linear-gradient(lighten($color-secondary,3), lighten($color-primary,3));
+            border-radius: 25px;
+        }
+
 }
+
+
