@@ -382,26 +382,15 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.button_degrade:hover::after {
-  opacity: 1;
-}
-
-.button_degrade::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-box-shadow: 0px 5px 20px #b1b1b1;
-          box-shadow: 0px 5px 20px #b1b1b1;
-  opacity: 0;
-  z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
-  background: linear-gradient(#ff88de, #9b63df);
-  border-radius: 25px;
+.button_degrade:hover {
+  -webkit-box-shadow: 0px 5px 20px #3f3f3f;
+          box-shadow: 0px 5px 20px #3f3f3f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8de0), to(#9e67e0));
+  background: linear-gradient(#ff8de0, #9e67e0);
 }
 
 header {
@@ -437,8 +426,8 @@ header i {
 /* formulaire */
 footer {
   background-color: #353535;
-  padding-bottom: 25px;
-  margin-top: -50px;
+  padding-bottom: 45px;
+  margin-top: -54px;
 }
 
 .nom_logo {
@@ -558,6 +547,8 @@ i {
   height: 70px;
   background-color: #f7f6f6;
   border-radius: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-box-shadow: 0px 5px 20px gainsboro;
           box-shadow: 0px 5px 20px gainsboro;
 }
@@ -589,6 +580,8 @@ i {
   padding-left: 31px;
   margin-right: 43px;
   color: #7e7e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .fonctionnement_card:hover {
@@ -603,7 +596,7 @@ i {
   width: 100%;
   padding-bottom: 60px;
   margin-top: 65px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: #f7f6f6;
 }
 
@@ -743,12 +736,8 @@ i {
 .container {
   background-color: rgba(255, 255, 255, 0.918);
   width: 100%;
-  height: 2335px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  height: 100%;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,20 +747,21 @@ i {
   padding-top: 334px;
   z-index: -1;
   opacity: 0;
-  -webkit-animation: modale 5s;
-          animation: modale 5s;
+  -webkit-animation: modale 3s;
+          animation: modale 3s;
 }
 
 .container .carre {
-  position: relative;
+  position: absolute;
+  top: 40%;
   width: 100px;
   height: 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   opacity: 0;
   border-radius: 10px;
-  -webkit-animation: rotate 2s both, disparition_carre 4s;
-          animation: rotate 2s both, disparition_carre 4s;
+  -webkit-animation: rotate 1s both, disparition_carre 2s;
+          animation: rotate 1s both, disparition_carre 2s;
 }
 
 @-webkit-keyframes modale {
@@ -921,6 +911,12 @@ body {
           animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
   -webkit-box-shadow: 0px 5px 20px gainsboro;
           box-shadow: 0px 5px 20px gainsboro;
@@ -935,17 +931,14 @@ body {
   font-weight: 300;
   font-size: 15px;
   padding-top: 5px;
-  padding-right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.liste_menu span {
+.liste_menu .prix {
   font-weight: 600;
+  font-size: 15px;
+  margin-right: 15px;
+  margin-top: 38px;
+  margin-left: 20px;
 }
 
 .liste_menu button {
@@ -955,21 +948,45 @@ body {
   text-align: center;
 }
 
-.card:hover + .validation {
-  -webkit-animation: validation 2s forwards;
-          animation: validation 2s forwards;
+.card:hover .validation {
+  width: 80px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.card:hover .validation i {
+  -webkit-animation: rotate 2s forwards;
+          animation: rotate 2s forwards;
+}
+
+.cardD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cardD div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .validation {
-  width: 60px;
+  width: 0px;
   height: 68px;
   background-color: #99E2D0;
-  position: absolute;
-  top: 0px;
-  right: -60px;
   border-radius: 0px 20px 20px 0px;
   color: #99E2D0;
-  margin-left: 2px;
+  margin-left: 5px;
+  margin-top: -6px;
 }
 
 .validation i {
@@ -979,18 +996,15 @@ body {
   background-color: white;
   border-radius: 100%;
   border: 1px solid #99E2D0;
-  position: relative;
-  left: 16px;
-  right: 15px;
-  top: 14px;
-  bottom: 14px;
+  visibility: hidden;
+  margin-top: 13px;
+  margin-left: 17px;
 }
 
 .nom_restaurant i {
   font-size: 25px;
-  position: relative;
-  left: 30px;
-  top: -2px;
+  position: absolute;
+  right: 40px;
 }
 
 @-webkit-keyframes progressive {
@@ -1029,28 +1043,6 @@ body {
   }
 }
 
-@-webkit-keyframes validation {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
-  }
-}
-
-@keyframes validation {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
-  }
-}
-
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0turn);
@@ -1059,6 +1051,67 @@ body {
   100% {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
+    visibility: visible;
   }
+}
+
+.card:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.card:nth-of-type(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.card:nth-of-type(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.card:nth-of-type(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.card:nth-of-type(5) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.card:nth-of-type(6) {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+.card:nth-of-type(7) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+.card:nth-of-type(8) {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+
+.card:nth-of-type(9) {
+  -webkit-animation-delay: 2800ms;
+          animation-delay: 2800ms;
+}
+
+.card:nth-of-type(10) {
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms;
+}
+
+.card:nth-of-type(11) {
+  -webkit-animation-delay: 3600ms;
+          animation-delay: 3600ms;
+}
+
+.card:nth-of-type(12) {
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms;
 }
 /*# sourceMappingURL=style.css.map */
