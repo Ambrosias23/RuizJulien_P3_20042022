@@ -715,10 +715,69 @@ i {
   position: absolute;
   right: 35px;
   top: 200px;
+  background-color: white;
 }
 
 .heart i {
   font-size: 25px;
+}
+
+.hearts:hover .heart {
+  visibility: hidden;
+  z-index: -1;
+}
+
+.heartd:hover {
+  -webkit-animation: heart-progress 3s forwards;
+          animation: heart-progress 3s forwards;
+}
+
+.heartd {
+  opacity: 0;
+  position: absolute;
+  right: 35px;
+  top: 200px;
+  z-index: 1;
+  background-clip: text;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heartd i {
+  font-size: 25px;
+}
+
+@-webkit-keyframes heart-progress {
+  0% {
+    -webkit-transform-origin: 0% bottom;
+            transform-origin: 0% bottom;
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes heart-progress {
+  0% {
+    -webkit-transform-origin: 0% bottom;
+            transform-origin: 0% bottom;
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {

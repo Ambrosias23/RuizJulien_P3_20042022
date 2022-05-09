@@ -165,14 +165,50 @@
                 right: 65px;}
 }
 
+
 .heart {
     position: absolute;
     right: 35px;
-    top: 200px;  
+    top: 200px;
+    background-color: white;
     i{
         font-size: 25px;}
+    }
+
+.hearts:hover .heart {
+    visibility: hidden;
+    z-index: -1;
+}
+.heartd:hover{
+          animation: heart-progress 3s forwards;    
+    }
+.heartd{
+    opacity: 0;
+    position: absolute;
+    right: 35px;
+    top: 200px;
+    z-index: 1;
+    background-clip: text;
+    background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    i{
+        font-size: 25px;
+    }
 }
 
+@keyframes heart-progress{
+    0% {
+        transform-origin: 0% bottom;
+        transform: scaleY(.1);
+        opacity: 1;
+        z-index: 1;   
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
 .card_menu img{
     @include tablet{
         height: 350px;}
@@ -219,18 +255,11 @@
     }
   }
 @keyframes rotate{
-    0% {
-        
+    0% {    
         transform: rotate (0turn);
     }
-    
-   
-
     100%{
-        
         transform: rotate(3turn);
-       
-        
     }
 }
 @keyframes disparition_carre{
