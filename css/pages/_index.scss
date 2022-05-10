@@ -11,15 +11,13 @@
         padding-left: 37px;
         font-size: 16px;
         width: 5px;}
-    input {
-        height: 47px;
-        border: none; 
-        background-color: rgb(234, 234, 234);
-        font-size: 16px;
-        padding-left: 9px;
-        }
-        
-    }
+        input {
+            height: 47px;
+            border: none; 
+            background-color: rgb(234, 234, 234);
+            font-size: 16px;
+            padding-left: 9px;}
+}
 
 .presentation{
     display: flex;
@@ -39,11 +37,8 @@
             font-weight: 300;}
             span{
                 padding-left: 15px;
-                padding-right: 15px;
-            }
+                padding-right: 15px;}
 }
-
-
  
 .fonctionnement{
     font-size: 24px;
@@ -52,6 +47,7 @@
     margin-bottom: 30px;
     margin-left: 20px;
 }
+
 .fonctionnement_card{
     display: flex;
     align-items: center;
@@ -84,15 +80,12 @@
             color: rgb(126,126,126);
             transition: 1s;}
 }
+
 .fonctionnement_card:hover {
-        background-color: rgb(244,237,254);
-        
-        i{
-            color: $color-primary;
-           }      
+    background-color: rgb(244,237,254);
+    i{
+        color: $color-primary;}      
     }
-
-
 
 .cards_menu{
     width: 100%;
@@ -122,9 +115,9 @@
                 @include desktop{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;}
-                    
+                    align-items: center;}           
 }
+
 .card_menu a{
     text-decoration: none;
     img{
@@ -132,19 +125,19 @@
         height: 179px;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;}
-            h2{
+        h2{
+            color: black;
+            font-size: 19px;
+            font-weight: 500;
+            margin-bottom: 0px;
+            margin-left: 15px;}
+            h3{
+                margin-top: 5px;
+                padding-bottom: 10px;
+                font-size: 18px;
+                font-weight: 300;
                 color: black;
-                font-size: 19px;
-                font-weight: 500;
-                margin-bottom: 0px;
                 margin-left: 15px;}
-                h3{
-                    margin-top: 5px;
-                    padding-bottom: 10px;
-                    font-size: 18px;
-                    font-weight: 300;
-                    color: black;
-                    margin-left: 15px;}
 }
 
 .card_menu .new{
@@ -160,26 +153,25 @@
     margin-top: 20px;
     border-radius: 3px;
     @include desktop{
-            right: 85px;}
-            @include tablet{
-                right: 65px;}
+        right: 85px;}
+        @include tablet{
+            right: 65px;}
 }
 
-
-.heart {
+.heart{
     position: absolute;
     right: 35px;
     top: 200px;
     background-color: white;
     i{
         font-size: 25px;}
-    }
-
+}
 
 .hearts:active .heartd{
-        transform: scale(1.1);
-        opacity: 1;
-    }
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 .heartd{
     opacity: 0;
     position: absolute;
@@ -193,8 +185,7 @@
     transform: scale(0.1);
     transition: transform 1000ms;
     i{
-        font-size: 25px;
-    }
+        font-size: 25px;}
 }
 
 
@@ -202,6 +193,7 @@
     @include tablet{
         height: 350px;}
 }
+
 .card_menu img{
     @include desktop{
         height: 550px;}
@@ -217,8 +209,9 @@
     padding-top: 334px;
     z-index: -1;
     opacity: 0;
-    animation: modale 3s;
-    .carre{
+    animation: modale 3s;}
+    
+/* .carre{
         position: absolute;
         top: 40%;
         width  : 100px;
@@ -227,8 +220,30 @@
         opacity: 0;
         border-radius: 10px;
         animation: rotate 1s both, disparition_carre 2s;
-        
-}}
+}
+
+@keyframes rotate{
+    0% {    
+        transform: rotate (0turn);
+    }
+    100%{
+        transform: rotate(3turn);
+    }
+}
+
+@keyframes disparition_carre{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+*/
+
 @keyframes modale {
     0% {
         z-index: 2;
@@ -242,23 +257,122 @@
         z-index: 2;
         opacity: 0;
     }
+}
+
+@keyframes loader {
+  0% {
+    width: 10%;
+    transform: rotate(0deg);
   }
-@keyframes rotate{
-    0% {    
-        transform: rotate (0turn);
-    }
-    100%{
-        transform: rotate(3turn);
-    }
+  10% {
+    left: 0%;
+    transform: rotate(0deg);
+  }
+  20% {
+    width: 0%;
+    left: 20%;
+  }
+  30% {
+    width: 25%;
+  }
+  50% {
+    left: 15%;
+    width: 35%;
+  }
+  70% {
+    width: 30%;
+    left: 18%;
+    transform: rotate(240deg);
+  }
+  90% {
+    width: 30%;
+    left: 10%;
+  }
+  100% {
+    width: 2%;
+    left: 25%;
+    transform: rotate(360deg);}
 }
-@keyframes disparition_carre{
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+
+@keyframes pan {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top right;
+  }
+  10% {
+    transform: rotate(-2deg);
+    transform-origin: top right;
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);}
 }
+
+@keyframes shadow {
+  0% {
+    width: 30%;
+  }
+  50% {
+    width: 40%;
+    left: 20px;
+  }
+  100% {
+    width: 30%;}
+}
+
+.pan-loader {
+    width: $component-dimension;
+    height: $component-dimension;
+    margin: -100px auto;
+    .loader {
+        position: relative;
+        top: 10%;
+        left: 0;
+        z-index: -1;
+        width: 60%;
+        height: 45%;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $loader-color;
+        border-radius: 50%;
+        animation: loader $timing infinite;
+        animation-timing-function: linear;
+}
+.pan-container {
+    display:flex;
+    width: 100%;
+    animation: pan $timing infinite;
+  }
+
+  .pan {
+    width: 60%;
+    height: 20px;
+    background: linear-gradient($pan-color-light, $pan-color-dark);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .handle {
+    width: 40%;
+    height: 10px;
+    background: linear-gradient($pan-color-light, $pan-color-dark);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .shadow {
+    position: relative;
+    top: 15%;
+    left: 15%;
+    width: 30%;
+    height: 8px;
+    background: $color-shadow;
+    // box-shadow: 5px 0 8px 4px $color-shadow;
+    border-radius: 20px;
+    animation: shadow $timing infinite;
+  }
+}
+
