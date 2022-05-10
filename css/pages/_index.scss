@@ -175,12 +175,10 @@
         font-size: 25px;}
     }
 
-.hearts:hover .heart {
-    visibility: hidden;
-    z-index: -1;
-}
-.heartd:hover{
-          animation: heart-progress 3s forwards;    
+
+.hearts:active .heartd{
+        transform: scale(1.1);
+        opacity: 1;
     }
 .heartd{
     opacity: 0;
@@ -192,23 +190,14 @@
     background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+    transform: scale(0.1);
+    transition: transform 1000ms;
     i{
         font-size: 25px;
     }
 }
 
-@keyframes heart-progress{
-    0% {
-        transform-origin: 0% bottom;
-        transform: scaleY(.1);
-        opacity: 1;
-        z-index: 1;   
-    }
-    100% {
-        transform: scaleY(1);
-        opacity: 1;
-    }
-}
+
 .card_menu img{
     @include tablet{
         height: 350px;}

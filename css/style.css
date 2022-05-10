@@ -722,14 +722,10 @@ i {
   font-size: 25px;
 }
 
-.hearts:hover .heart {
-  visibility: hidden;
-  z-index: -1;
-}
-
-.heartd:hover {
-  -webkit-animation: heart-progress 3s forwards;
-          animation: heart-progress 3s forwards;
+.hearts:active .heartd {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
 }
 
 .heartd {
@@ -742,42 +738,16 @@ i {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
 }
 
 .heartd i {
   font-size: 25px;
-}
-
-@-webkit-keyframes heart-progress {
-  0% {
-    -webkit-transform-origin: 0% bottom;
-            transform-origin: 0% bottom;
-    -webkit-transform: scaleY(0.1);
-            transform: scaleY(0.1);
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
-  }
-}
-
-@keyframes heart-progress {
-  0% {
-    -webkit-transform-origin: 0% bottom;
-            transform-origin: 0% bottom;
-    -webkit-transform: scaleY(0.1);
-            transform: scaleY(0.1);
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
