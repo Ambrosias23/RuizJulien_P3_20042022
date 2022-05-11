@@ -1234,7 +1234,7 @@ body {
   opacity: 0;
   position: absolute;
   right: 35px;
-  top: 30px;
+  top: 36px;
   z-index: 1;
   background-clip: text;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -1255,7 +1255,7 @@ body {
 .heartN {
   position: absolute;
   right: 35px;
-  top: 30px;
+  top: 36px;
 }
 
 .heartN i {
@@ -1338,47 +1338,37 @@ body {
 }
 
 .card:nth-of-type(4) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.card:nth-of-type(5) {
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
 }
 
-.card:nth-of-type(5) {
+.card:nth-of-type(6) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.card:nth-of-type(7) {
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
 }
 
-.card:nth-of-type(6) {
+.card:nth-of-type(8) {
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+
+.card:nth-of-type(9) {
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
 }
 
-.card:nth-of-type(7) {
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-}
-
-.card:nth-of-type(8) {
-  -webkit-animation-delay: 2400ms;
-          animation-delay: 2400ms;
-}
-
-.card:nth-of-type(9) {
-  -webkit-animation-delay: 2800ms;
-          animation-delay: 2800ms;
-}
-
 .card:nth-of-type(10) {
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
-}
-
-.card:nth-of-type(11) {
-  -webkit-animation-delay: 3600ms;
-          animation-delay: 3600ms;
-}
-
-.card:nth-of-type(12) {
-  -webkit-animation-delay: 4000ms;
-          animation-delay: 4000ms;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 /*# sourceMappingURL=style.css.map */

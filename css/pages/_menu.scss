@@ -128,7 +128,7 @@ body{
     opacity: 0;
     position: absolute;
     right: 35px;
-    top: 30px;
+    top: 36px;
     z-index: 1;
     background-clip: text;
     background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
@@ -143,7 +143,7 @@ body{
 .heartN{
     position: absolute;
     right: 35px;
-    top: 30px;
+    top: 36px;
     i{
         font-size: 25px;}
 }
@@ -174,14 +174,13 @@ body{
 .card:nth-of-type(1) {animation-delay: 0s;}
 .card:nth-of-type(2) {animation-delay: 200ms;}
 .card:nth-of-type(3) {animation-delay: 400ms;}   
-.card:nth-of-type(4) {animation-delay: 800ms;}
-.card:nth-of-type(5) {animation-delay: 1200ms;}
-.card:nth-of-type(6) {animation-delay: 1600ms;}
-.card:nth-of-type(7) {animation-delay: 2000ms;}
-.card:nth-of-type(8) {animation-delay: 2400ms;}
-.card:nth-of-type(9) {animation-delay: 2800ms;}
-.card:nth-of-type(10) {animation-delay: 3200ms;}
-.card:nth-of-type(11) {animation-delay: 3600ms;}
-.card:nth-of-type(12) {animation-delay: 4000ms;}
+.card:nth-of-type(4) {animation-delay: 600ms;}
+.card:nth-of-type(5) {animation-delay: 800ms;}
+.card:nth-of-type(6) {animation-delay: 1000ms;}
+.card:nth-of-type(7) {animation-delay: 1200ms;}
+.card:nth-of-type(8) {animation-delay: 1400ms;}
+.card:nth-of-type(9) {animation-delay: 1600ms;}
+.card:nth-of-type(10) {animation-delay: 1800ms;}
+
 
 
