@@ -48,7 +48,7 @@
     margin-left: 20px;
 }
 
-.fonctionnement_card{
+.fonctionnement-card{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -81,13 +81,13 @@
             transition: 1s;}
 }
 
-.fonctionnement_card:hover {
+.fonctionnement-card:hover {
     background-color: rgb(244,237,254);
     i{
         color: $color-primary;}      
     }
 
-.cards_menu{
+.cards-menu{
     width: 100%;
     padding-bottom: 60px;
     margin-top: 65px;
@@ -99,7 +99,7 @@
         padding-top: 55px;
         margin-left: 20px;
         margin-bottom: 28px;}
-        .card_menu{
+        .card-menu{
             width: 90%;
             margin-left: 20px;
             margin-right: 20px;
@@ -118,7 +118,7 @@
                     align-items: center;}           
 }
 
-.card_menu a{
+.card-menu a{
     text-decoration: none;
     img{
         width: 100%;
@@ -140,7 +140,7 @@
                 margin-left: 15px;}
 }
 
-.card_menu .new{
+.card-menu .new{
     background-color: $color-tertiary;
     color: rgb(58, 133, 103);
     width: 90px;
@@ -189,12 +189,12 @@
 }
 
 
-.card_menu img{
+.card-menu img{
     @include tablet{
         height: 350px;}
 }
 
-.card_menu img{
+.card-menu img{
     @include desktop{
         height: 550px;}
 }
@@ -231,7 +231,7 @@
     }
 }
 
-@keyframes disparition_carre{
+@keyframes disparition-carre{
     0%{
         opacity: 1;
     }
@@ -328,7 +328,7 @@
     margin: -100px auto;
     .loader {
         position: relative;
-        top: 10%;
+        top: 9%;
         left: 0;
         z-index: -1;
         width: 60%;

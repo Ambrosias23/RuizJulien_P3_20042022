@@ -1,12 +1,9 @@
 @import "./base/normalize.scss";
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/Placeholders";
 @import "./base/base";
 @import "./components/button";
 @import "./layouts/header";
-@import "./layouts/form";
 @import "./layouts/footer";
 @import "./pages/index";
 @import "./pages/menu";

@@ -367,7 +367,7 @@ body {
           justify-content: center;
 }
 
-.button_degrade {
+.button-degrade {
   border-radius: 25px;
   border: 0px solid;
   height: 50px;
@@ -387,7 +387,7 @@ body {
   transition: all 1s;
 }
 
-.button_degrade:hover {
+.button-degrade:hover {
   -webkit-box-shadow: 0px 5px 20px #727272;
           box-shadow: 0px 5px 20px #727272;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8de0), to(#9e67e0));
@@ -424,14 +424,13 @@ header i {
   height: 28px;
 }
 
-/* formulaire */
 footer {
   background-color: #353535;
   padding-bottom: 45px;
   margin-top: -54px;
 }
 
-.nom_logo {
+.nom-logo {
   color: white;
   font-size: 17px;
   padding: 22px;
@@ -535,7 +534,7 @@ i {
   margin-left: 20px;
 }
 
-.fonctionnement_card {
+.fonctionnement-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,7 +553,7 @@ i {
           box-shadow: 0px 5px 20px gainsboro;
 }
 
-.fonctionnement_card span {
+.fonctionnement-card span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,7 +575,7 @@ i {
   font-size: 16px;
 }
 
-.fonctionnement_card i {
+.fonctionnement-card i {
   font-size: 20px;
   padding-left: 31px;
   margin-right: 43px;
@@ -585,15 +584,15 @@ i {
   transition: 1s;
 }
 
-.fonctionnement_card:hover {
+.fonctionnement-card:hover {
   background-color: #f4edfe;
 }
 
-.fonctionnement_card:hover i {
+.fonctionnement-card:hover i {
   color: #9356DC;
 }
 
-.cards_menu {
+.cards-menu {
   width: 100%;
   padding-bottom: 60px;
   margin-top: 65px;
@@ -601,7 +600,7 @@ i {
   background-color: #f7f6f6;
 }
 
-.cards_menu h1 {
+.cards-menu h1 {
   font-size: 24px;
   font-weight: 600;
   padding-top: 55px;
@@ -609,7 +608,7 @@ i {
   margin-bottom: 28px;
 }
 
-.cards_menu .card_menu {
+.cards-menu .card-menu {
   width: 90%;
   margin-left: 20px;
   margin-right: 20px;
@@ -622,7 +621,7 @@ i {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .cards_menu {
+  .cards-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -637,7 +636,7 @@ i {
 }
 
 @media screen and (min-width: 991px) {
-  .cards_menu {
+  .cards-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -651,11 +650,11 @@ i {
   }
 }
 
-.card_menu a {
+.card-menu a {
   text-decoration: none;
 }
 
-.card_menu a img {
+.card-menu a img {
   width: 100%;
   height: 179px;
   border-radius: 20px 20px 0px 0px;
@@ -663,7 +662,7 @@ i {
      object-fit: cover;
 }
 
-.card_menu a h2 {
+.card-menu a h2 {
   color: black;
   font-size: 19px;
   font-weight: 500;
@@ -671,7 +670,7 @@ i {
   margin-left: 15px;
 }
 
-.card_menu a h3 {
+.card-menu a h3 {
   margin-top: 5px;
   padding-bottom: 10px;
   font-size: 18px;
@@ -680,7 +679,7 @@ i {
   margin-left: 15px;
 }
 
-.card_menu .new {
+.card-menu .new {
   background-color: #99E2D0;
   color: #3a8567;
   width: 90px;
@@ -701,13 +700,13 @@ i {
 }
 
 @media screen and (min-width: 991px) {
-  .card_menu .new {
+  .card-menu .new {
     right: 85px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .card_menu .new {
+  .card-menu .new {
     right: 65px;
   }
 }
@@ -752,13 +751,13 @@ i {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .card_menu img {
+  .card-menu img {
     height: 350px;
   }
 }
 
 @media screen and (min-width: 991px) {
-  .card_menu img {
+  .card-menu img {
     height: 550px;
   }
 }
@@ -801,7 +800,7 @@ i {
     }
 }
 
-@keyframes disparition_carre{
+@keyframes disparition-carre{
     0%{
         opacity: 1;
     }
@@ -1002,7 +1001,7 @@ i {
 
 .pan-loader .loader {
   position: relative;
-  top: 10%;
+  top: 9%;
   left: 0;
   z-index: -1;
   width: 60%;
@@ -1061,7 +1060,7 @@ body {
   margin: 0px;
 }
 
-.image_menu img {
+.image-menu img {
   width: 100%;
   height: 280px;
   -o-object-fit: cover;
@@ -1069,18 +1068,18 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .image_menu img {
+  .image-menu img {
     height: 500px;
   }
 }
 
 @media screen and (min-width: 991px) {
-  .image_menu img {
+  .image-menu img {
     height: 700px;
   }
 }
 
-.liste_menu {
+.liste-menu {
   background-color: #f7f6f6;
   border-radius: 53px 53px 0% 0%;
   width: 100%;
@@ -1091,7 +1090,7 @@ body {
   top: -55px;
 }
 
-.liste_menu .nom_restaurant {
+.liste-menu .nom-restaurant {
   padding-top: 40px;
   padding-bottom: 0px;
   margin-top: 0px;
@@ -1099,7 +1098,7 @@ body {
   font-weight: 300;
 }
 
-.liste_menu .titre_cards {
+.liste-menu .titre-cards {
   width: 40px;
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
@@ -1107,12 +1106,9 @@ body {
   margin-bottom: 20px;
   margin-top: 35px;
   font-size: 16px;
-  visibility: hidden;
-  -webkit-animation: progressive 2s forwards;
-          animation: progressive 2s forwards;
 }
 
-.liste_menu .card {
+.liste-menu .card {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
   height: 68px;
@@ -1124,8 +1120,6 @@ body {
           animation: progressive;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   display: -webkit-box;
@@ -1139,18 +1133,18 @@ body {
           box-shadow: 0px 5px 20px gainsboro;
 }
 
-.liste_menu div {
-  padding-top: 6px;
+.liste-menu div {
+  padding-top: 4px;
   font-size: 18px;
 }
 
-.liste_menu .description {
+.liste-menu .description {
   font-weight: 300;
   font-size: 15px;
   padding-top: 5px;
 }
 
-.liste_menu .prix {
+.liste-menu .prix {
   font-weight: 600;
   font-size: 15px;
   margin-right: 15px;
@@ -1158,7 +1152,7 @@ body {
   margin-left: 20px;
 }
 
-.liste_menu button {
+.liste-menu button {
   width: 175px;
   height: 50px;
   margin-top: 40px;
@@ -1167,13 +1161,13 @@ body {
 
 .card:hover .validation {
   width: 80px;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
 }
 
 .card:hover .validation i {
-  -webkit-animation: rotate 2s forwards;
-          animation: rotate 2s forwards;
+  -webkit-animation: rotate 1200ms forwards;
+          animation: rotate 1200ms forwards;
 }
 
 .cardD {
@@ -1203,22 +1197,32 @@ body {
   border-radius: 0px 20px 20px 0px;
   color: #99E2D0;
   margin-left: 5px;
-  margin-top: -6px;
+  margin-top: -4px;
 }
 
 .validation i {
-  width: 29px;
-  height: 29px;
-  font-size: 27px;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
   background-color: white;
   border-radius: 100%;
   border: 1px solid #99E2D0;
   visibility: hidden;
-  margin-top: 13px;
-  margin-left: 17px;
+  margin-top: 17px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
 }
 
-.nom_restaurant i {
+.nom-restaurant i {
   font-size: 25px;
   position: absolute;
   right: 40px;
@@ -1322,53 +1326,63 @@ body {
   }
 }
 
-.card:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.card:nth-of-type(2) {
+.card-list-entree .card:nth-of-type(1) {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
+  background-color: red;
 }
 
-.card:nth-of-type(3) {
+.card-list-entree .card:nth-of-type(2) {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
+  background-color: green;
 }
 
-.card:nth-of-type(4) {
+.card-list-entree .card:nth-of-type(3) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
+  background-color: blue;
 }
 
-.card:nth-of-type(5) {
+.card-list-entree .card:nth-of-type(4) {
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
+  background-color: blue;
 }
 
-.card:nth-of-type(6) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-.card:nth-of-type(7) {
+.card-list-plat .card:nth-of-type(1) {
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
+  background-color: pink;
 }
 
-.card:nth-of-type(8) {
+.card-list-plat .card:nth-of-type(2) {
   -webkit-animation-delay: 1400ms;
           animation-delay: 1400ms;
+  background-color: purple;
 }
 
-.card:nth-of-type(9) {
+.card-list-plat .card:nth-of-type(3) {
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
+  background-color: orange;
 }
 
-.card:nth-of-type(10) {
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
+.card-list-dessert .card:nth-of-type(1) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  background-color: pink;
+}
+
+.card-list-dessert .card:nth-of-type(2) {
+  -webkit-animation-delay: 2200ms;
+          animation-delay: 2200ms;
+  background-color: purple;
+}
+
+.card-list-dessert .card:nth-of-type(3) {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+  background-color: orange;
 }
 /*# sourceMappingURL=style.css.map */
