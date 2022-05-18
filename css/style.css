@@ -342,7 +342,7 @@ template {
   display: none;
 }
 
-/*couleurs etc */
+/*couleurs */
 /* modale */
 /*Police régle général etc */
 * {
@@ -352,10 +352,6 @@ template {
 
 body {
   font-family: 'roboto';
-}
-
-.nom_logo, .nom_restaurant {
-  font-family: 'Shrikhand';
 }
 
 .button {
@@ -430,11 +426,11 @@ footer {
   margin-top: -54px;
 }
 
-.nom-logo {
+.name-logo {
   color: white;
-  font-size: 17px;
+  font-size: 19px;
   padding: 22px;
-  font-weight: 100;
+  font-family: 'Shrikhand';
 }
 
 ul {
@@ -461,7 +457,7 @@ i {
   width: 3px;
 }
 
-.localisation {
+.location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,13 +474,13 @@ i {
   margin-top: 5px;
 }
 
-.localisation i {
+.location i {
   padding-left: 37px;
   font-size: 16px;
   width: 5px;
 }
 
-.localisation input {
+.location input {
   height: 47px;
   border: none;
   background-color: #eaeaea;
@@ -526,7 +522,7 @@ i {
   padding-right: 15px;
 }
 
-.fonctionnement {
+.operation {
   font-size: 24px;
   font-weight: 600;
   margin-top: 52px;
@@ -534,7 +530,7 @@ i {
   margin-left: 20px;
 }
 
-.fonctionnement-card {
+.operation-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,7 +549,7 @@ i {
           box-shadow: 0px 5px 20px gainsboro;
 }
 
-.fonctionnement-card span {
+.operation-card span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,7 +571,7 @@ i {
   font-size: 16px;
 }
 
-.fonctionnement-card i {
+.operation-card i {
   font-size: 20px;
   padding-left: 31px;
   margin-right: 43px;
@@ -584,11 +580,11 @@ i {
   transition: 1s;
 }
 
-.fonctionnement-card:hover {
+.operation-card:hover {
   background-color: #f4edfe;
 }
 
-.fonctionnement-card:hover i {
+.operation-card:hover i {
   color: #9356DC;
 }
 
@@ -725,6 +721,8 @@ i {
 .hearts:active .heartd {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
   opacity: 1;
 }
 
@@ -740,10 +738,10 @@ i {
   -webkit-text-fill-color: transparent;
   -webkit-transform: scale(0.1);
           transform: scale(0.1);
-  -webkit-transition: -webkit-transform 1000ms;
-  transition: -webkit-transform 1000ms;
-  transition: transform 1000ms;
-  transition: transform 1000ms, -webkit-transform 1000ms;
+  -webkit-transition: -webkit-transform 10ms;
+  transition: -webkit-transform 10ms;
+  transition: transform 10ms;
+  transition: transform 10ms, -webkit-transform 10ms;
 }
 
 .heartd i {
@@ -793,23 +791,18 @@ i {
 
 @keyframes rotate{
     0% {    
-        transform: rotate (0turn);
-    }
+        transform: rotate (0turn);}
     100%{
-        transform: rotate(3turn);
-    }
+        transform: rotate(3turn);}
 }
 
 @keyframes disparition-carre{
     0%{
-        opacity: 1;
-    }
+        opacity: 1;}
     50%{
-        opacity: 1;
-    }
+        opacity: 1;}
     100%{
-        opacity: 0;
-    }
+        opacity: 0;}
 }
 */
 @-webkit-keyframes modale {
@@ -972,8 +965,8 @@ i {
     width: 30%;
   }
   50% {
-    width: 40%;
-    left: 20px;
+    width: 50%;
+    left: 10px;
   }
   100% {
     width: 30%;
@@ -985,8 +978,8 @@ i {
     width: 30%;
   }
   50% {
-    width: 40%;
-    left: 20px;
+    width: 50%;
+    left: 10px;
   }
   100% {
     width: 30%;
@@ -999,6 +992,18 @@ i {
   margin: -100px auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pan-loader {
+    margin: 100px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .pan-loader {
+    margin: -50px;
+  }
+}
+
 .pan-loader .loader {
   position: relative;
   top: 9%;
@@ -1006,7 +1011,9 @@ i {
   z-index: -1;
   width: 60%;
   height: 45%;
-  border: 10px solid transparent;
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10px solid transparent;
+          order: 10px solid transparent;
   border-bottom: 10px solid #FDD835;
   border-radius: 50%;
   -webkit-animation: loader 1s infinite;
@@ -1060,7 +1067,7 @@ body {
   margin: 0px;
 }
 
-.image-menu img {
+.picture-menu img {
   width: 100%;
   height: 280px;
   -o-object-fit: cover;
@@ -1068,18 +1075,18 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .image-menu img {
+  .picture-menu img {
     height: 500px;
   }
 }
 
 @media screen and (min-width: 991px) {
-  .image-menu img {
+  .picture-menu img {
     height: 700px;
   }
 }
 
-.liste-menu {
+.list-menu {
   background-color: #f7f6f6;
   border-radius: 53px 53px 0% 0%;
   width: 100%;
@@ -1090,15 +1097,16 @@ body {
   top: -55px;
 }
 
-.liste-menu .nom-restaurant {
+.list-menu .name-restaurant {
   padding-top: 40px;
   padding-bottom: 0px;
   margin-top: 0px;
-  font-size: 29px;
-  font-weight: 300;
+  font-size: 28px;
+  font-weight: 100;
+  font-family: 'Shrikhand';
 }
 
-.liste-menu .titre-cards {
+.list-menu .title-cards {
   width: 40px;
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
@@ -1108,7 +1116,7 @@ body {
   font-size: 16px;
 }
 
-.liste-menu .card {
+.list-menu .card {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
   height: 68px;
@@ -1133,18 +1141,18 @@ body {
           box-shadow: 0px 5px 20px gainsboro;
 }
 
-.liste-menu div {
+.list-menu div {
   padding-top: 4px;
   font-size: 18px;
 }
 
-.liste-menu .description {
+.list-menu .description {
   font-weight: 300;
   font-size: 15px;
   padding-top: 5px;
 }
 
-.liste-menu .prix {
+.list-menu .price {
   font-weight: 600;
   font-size: 15px;
   margin-right: 15px;
@@ -1152,7 +1160,7 @@ body {
   margin-left: 20px;
 }
 
-.liste-menu button {
+.list-menu button {
   width: 175px;
   height: 50px;
   margin-top: 40px;
@@ -1222,48 +1230,17 @@ body {
   font-weight: bold;
 }
 
-.nom-restaurant i {
-  font-size: 25px;
-  position: absolute;
-  right: 40px;
-}
-
-.heartM:active .heartDM {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  opacity: 1;
-}
-
-.heartDM {
-  opacity: 0;
+.list-menu .heart {
   position: absolute;
   right: 35px;
   top: 36px;
-  z-index: 1;
-  background-clip: text;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
-  -webkit-transition: -webkit-transform 1000ms;
-  transition: -webkit-transform 1000ms;
-  transition: transform 1000ms;
-  transition: transform 1000ms, -webkit-transform 1000ms;
+  background-color: #f7f6f6;
 }
 
-.heartDM i {
-  font-size: 25px;
-}
-
-.heartN {
+.list-menu .heartd {
   position: absolute;
   right: 35px;
   top: 36px;
-}
-
-.heartN i {
-  font-size: 25px;
 }
 
 @-webkit-keyframes progressive {
@@ -1329,60 +1306,50 @@ body {
 .card-list-entree .card:nth-of-type(1) {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
-  background-color: red;
 }
 
 .card-list-entree .card:nth-of-type(2) {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
-  background-color: green;
 }
 
 .card-list-entree .card:nth-of-type(3) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
-  background-color: blue;
 }
 
 .card-list-entree .card:nth-of-type(4) {
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
-  background-color: blue;
 }
 
-.card-list-plat .card:nth-of-type(1) {
+.card-list-dish .card:nth-of-type(1) {
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
-  background-color: pink;
 }
 
-.card-list-plat .card:nth-of-type(2) {
+.card-list-dish .card:nth-of-type(2) {
   -webkit-animation-delay: 1400ms;
           animation-delay: 1400ms;
-  background-color: purple;
 }
 
-.card-list-plat .card:nth-of-type(3) {
+.card-list-dish .card:nth-of-type(3) {
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
-  background-color: orange;
 }
 
 .card-list-dessert .card:nth-of-type(1) {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
-  background-color: pink;
 }
 
 .card-list-dessert .card:nth-of-type(2) {
   -webkit-animation-delay: 2200ms;
           animation-delay: 2200ms;
-  background-color: purple;
 }
 
 .card-list-dessert .card:nth-of-type(3) {
   -webkit-animation-delay: 2400ms;
           animation-delay: 2400ms;
-  background-color: orange;
 }
 /*# sourceMappingURL=style.css.map */
