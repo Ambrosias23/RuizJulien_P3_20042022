@@ -1006,14 +1006,14 @@ i {
 
 .pan-loader .loader {
   position: relative;
-  top: 9%;
+  top: 8%;
   left: 0;
   z-index: -1;
   width: 60%;
   height: 45%;
   border: 10px solid transparent;
   border-bottom: 10px solid #FDD835;
-  border-radius: 20px;
+  border-radius: 30px;
   -webkit-animation: loader 1s infinite;
           animation: loader 1s infinite;
   -webkit-animation-timing-function: linear;
