@@ -1013,7 +1013,7 @@ i {
   height: 45%;
   border: 10px solid transparent;
   border-bottom: 10px solid #FDD835;
-  border-radius: 50%;
+  border-radius: 30%;
   -webkit-animation: loader 1s infinite;
           animation: loader 1s infinite;
   -webkit-animation-timing-function: linear;
